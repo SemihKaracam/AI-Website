@@ -1,0 +1,154 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    color: white;
+}
+
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-family: var(--font-family);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-logo{
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+.sign{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.signin-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: .5rem .75rem;
+    border: none;
+}
+
+.signup-btn {
+    cursor: pointer;
+    background-color: #FF4820;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .5rem .75rem;
+    border: none;
+
+}
+
+
+.menu-container{
+    display: none;
+    position: relative;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.close-icon{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+
+
+.menu-nav-links-btns{
+    position: absolute;
+    width: 16rem;
+    top: 3rem;
+    right: 0;
+    padding: 1rem;
+    background: var(--color-footer);
+    font-family: var(--font-family);
+    font-weight: 500;
+
+}
+.menu-nav-btns{
+    display: none;
+}
+.menu-nav-links{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menu-signin-btn{
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    margin: 1rem 0;
+
+}
+.menu-nav-btns button{
+    display: block;
+    margin-left: auto;
+}
+
+
+
+
+.menu-nav-links li{
+    width: 100%;
+}
+@media screen and (max-width: 978px) {
+    .nav-links{
+        display: none;
+    }
+
+    .menu-container{
+        display: unset;
+    }
+ 
+    .menu-icon{
+        display: unset;
+    }
+
+    .navbar{
+        padding: 2rem;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .nav-links{
+        display: none;
+    }
+    .menu-nav-btns{
+        display: unset;
+    }
+    .menu-icon{
+        display: unset;
+    }
+
+    
+
+    .signin-btn,.signup-btn{
+        display: none;
+    }
+    
+}

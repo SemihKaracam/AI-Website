@@ -1,0 +1,87 @@
+.what-gpt3{
+    width: 100%;
+    padding: 2rem 6rem;
+    
+}
+
+.what-gpt3-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+.top-gpt3{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.middle-gpt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-gpt h3{
+    font-size: 34px;
+    max-width: 472px;
+    font-weight: 800;
+}
+
+.middle-gpt > p{
+    color: var(--color-subtext );
+}
+
+.bottom-gpt3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 978px) {
+    .what-gpt3{
+        padding: 2rem;
+    }
+    .middle-gpt h3{
+        font-size: 24px;
+    }
+    .middle-gpt{
+        flex-direction: column;
+        align-items: unset;
+        gap: 1rem;
+    }
+    .middle-gpt p{
+        font-size: 14px;
+    }
+    .bottom-gpt3{
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .top-gpt3{
+        flex-direction: column;
+    }
+
+}
